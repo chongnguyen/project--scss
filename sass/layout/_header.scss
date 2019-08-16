@@ -1,0 +1,23 @@
+.header {
+    background: linear-gradient(63deg, $bg-color-dark 0%, $bg-color-light 100%), url(../image/background1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    padding: 30px;
+    clip-path: ellipse(71% 50% at 50% 35%);
+    
+    &__brand {
+        &__logo {
+            width: 200px;
+        }
+    }
+
+    &__primary {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
