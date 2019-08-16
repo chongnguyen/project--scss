@@ -1,24 +1,58 @@
 html {
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
 }
 
 .header__primary {
-    color: $color-white;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  text-align: center;
+
+  &--main {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+    animation-name: moveInLeft;
+    animation-duration: 0.7s;
+  }
+
+  &--sub {
+    animation-name: moveInRight;
+    animation-duration: 0.7s;
+  }
+}
+
+.about-section {  
+  font-size: 1.6rem;
+  color: $color-gray-dark;
+  
+  .header__secondary {
+    display: inline-block;
+    margin: auto;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 1.5rem;
-    text-align: center;
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(63deg, rgba(90, 195, 190, 1) 41%, rgba(3, 37, 145, 1) 77%);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+    transition: all .3s;
 
-    &--main {
-        font-size: 5rem;
-        font-weight: 100;
-        margin-bottom: 10px;
-        animation-name: moveInLeft;
-        animation-duration: .7s;
+    &:hover {
+      transform: skewY(10deg) scale(.9);
+      text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.233);
+      letter-spacing: 0;
     }
+  }
 
-    &--sub {
-        animation-name: moveInRight;
-        animation-duration: .7s;
-    }
+  .header__tertiary {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 20px 0px;
+  }
+
+  .paragraph {
+    margin-bottom: 20px;
+  }
 }
